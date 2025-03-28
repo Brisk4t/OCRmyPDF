@@ -15,11 +15,7 @@ from ocrmypdf._pipelines._common import (
     configure_debug_logging,
 )
 from ocrmypdf._version import __version__
-from ocrmypdf.api import (
-    Verbosity,
-    configure_logging,
-    ocr,
-)
+from ocrmypdf.api import *
 from ocrmypdf.exceptions import (
     BadArgsError,
     DpiError,
@@ -54,6 +50,8 @@ __all__ = [
     'InputFileError',
     'MissingDependencyError',
     'ocr',
+    'pdf_to_hocr',
+    'hocr_to_ocr_pdf',
     'OcrEngine',
     'OrientationConfidence',
     'OutputFileAccessError',

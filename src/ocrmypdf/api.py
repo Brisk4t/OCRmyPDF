@@ -380,7 +380,7 @@ def ocr(  # noqa: D417
         return run_pipeline(options=options, plugin_manager=plugin_manager)
 
 
-def _pdf_to_hocr(  # noqa: D417
+def pdf_to_hocr(  # noqa: D417
     input_pdf: Path,
     output_folder: Path,
     *,
@@ -475,7 +475,7 @@ def _pdf_to_hocr(  # noqa: D417
         return run_hocr_pipeline(options=options, plugin_manager=plugin_manager)
 
 
-def _hocr_to_ocr_pdf(  # noqa: D417
+def hocr_to_ocr_pdf(  # noqa: D417
     work_folder: Path,
     output_file: Path,
     *,
