@@ -15,7 +15,13 @@ from ocrmypdf._pipelines._common import (
     configure_debug_logging,
 )
 from ocrmypdf._version import __version__
-from ocrmypdf.api import *
+from ocrmypdf.api import (
+    Verbosity,
+    configure_logging,
+    ocr,
+    hocr_to_ocr_pdf,
+    pdf_to_hocr
+)
 from ocrmypdf.exceptions import (
     BadArgsError,
     DpiError,
